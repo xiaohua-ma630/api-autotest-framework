@@ -1,0 +1,19 @@
+# 数据驱动：用例与数据分离
+post_json:
+  - payload: {name: "张三", age: 20, tags: [vip, active]}
+    expect_code: 200
+    desc: "正常JSON提交"
+  - payload: {}
+    expect_code: 200
+    desc: "空对象提交"
+  - payload: {name: "", age: -1}
+    expect_code: 200
+    desc: "边界值：空字符串与负数"
+  - payload: {name: "a1!@#中文🧪", age: 999999}
+    expect_code: 200
+    desc: "特殊字符与超长数值"
+
+status_code:
+  - code: 200
+  - code: 404
+  - code: 500

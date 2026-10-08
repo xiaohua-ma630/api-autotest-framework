@@ -1,0 +1,27 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# pytest 缓存
+.pytest_cache/
+
+# 虚拟环境
+venv/
+.venv/
+env/
+
+# 日志
+logs/
+*.log
+.env
+
+# Allure 报告（只保留代码，报告截图放作品集文档）
+allure-report/
+allure-results/
+report/
+
+# IDE / 系统文件
+.idea/
+.vscode/
+.DS_Store

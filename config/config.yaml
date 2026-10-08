@@ -1,0 +1,20 @@
+# 全局配置：多环境切换
+env: test
+
+test:
+  base_url: "https://httpbin.org"
+  db:
+    host: "127.0.0.1"
+    port: 3306
+    user: "test_user"
+    password: "test_pass"
+    database: "test_db"
+
+dev:
+  base_url: "https://dev.httpbin.org"
+  db:
+    host: "127.0.0.1"
+    port: 3306
+    user: "dev_user"
+    password: "dev_pass"
+    database: "dev_db"
